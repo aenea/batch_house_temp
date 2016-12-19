@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get upgrade --yes && \
     apt-get install --yes \
     owfs && \
+    python && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir /mnt/1wire
 
