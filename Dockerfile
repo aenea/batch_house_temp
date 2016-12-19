@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get upgrade --yes && \
     apt-get install --yes \
-    owfs && \
+    owfs \
     python && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir /mnt/1wire
